@@ -1,3 +1,6 @@
+
+------------------------------------------------VARIABLES---------------------------------------------------
+
 local players = game:GetService("Players")
 local player = players.LocalPlayer
 local sg = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
@@ -16,6 +19,8 @@ local dragging
 local dragInput
 local dragStart
 local startPos
+
+------------------------------------------------PROPERTIES--------------------------------------------------
 
 frame.Name = "Chest ESP"
 frame.Parent = sg
@@ -41,7 +46,7 @@ title.TextWrapped = true
 
 button.Name = "Button"
 button.Parent = frame
-button.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 button.BorderColor3 = Color3.fromRGB(30, 30, 30)
 button.Position = UDim2.new(0.0500000007, 0, 0.370000005, 0)
 button.Size = UDim2.new(0.899999976, 0, 0.569999933, 0)
@@ -57,6 +62,8 @@ uc2.Parent = button
 uc3.Parent = frame
 
 sg.ResetOnSpawn = false
+
+------------------------------------------------LOOPS & FUNCTIONS-------------------------------------------
 
 for _, chest in pairs(chests:GetChildren()) do
     count = count + 1;
