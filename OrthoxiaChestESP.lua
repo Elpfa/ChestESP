@@ -13,7 +13,6 @@ local uc2 = Instance.new("UICorner")
 local uc3 = Instance.new("UICorner")
 local chests = workspace:WaitForChild("Chests")
 local chestNames = {"Normal_Chest"};
-local count = 0;
 local gui = frame
 local dragging
 local dragInput
@@ -66,7 +65,7 @@ sg.ResetOnSpawn = false
 ------------------------------------------------LOOPS & FUNCTIONS-------------------------------------------
 
 for _, chest in pairs(chests:GetChildren()) do
-    count = count + 1;
+    count = _;
 end
 print("There are currently ".. count .. " chests in the server.");
 
