@@ -150,7 +150,7 @@ chests.ChildAdded:Connect(function(chest)
 
     local count = 0;
     for _, chest in pairs(chests:GetChildren()) do
-        count = count + 1;
+        count = _;
     end
 
     print("There are currently ".. count .. " chests in the server.");
@@ -163,7 +163,7 @@ chests.ChildRemoved:Connect(function(chest)
     
     local count = 0;
     for _, chest in pairs(chests:GetChildren()) do
-        count = count + 1;
+        count = _;
     end
     print("There are currently ".. count .. " chests in the server.");
 end)
